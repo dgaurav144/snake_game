@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./bgc.jpg");
+}
+#board{
+    height: 80vh;
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    background: linear-gradient(rgb(141, 216, 141) , rgb(255, 255, 255));
+    border: 1px solid;
+    border-radius: 20px;
+    
+}
+.head{
+    background: linear-gradient(black,  red);
+    border: 0.5px solid black;
+    border-radius: 40%;
+    
+
+} 
+.body{
+    background: linear-gradient( yellow , teal);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.food
+{
+    background: url("./food.jpg");
+    background-size: cover;
+}
+#scoreBox{
+    position: absolute;
+    right: 200px;
+    top: 25px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Kenia', sans-serif;
+/* font-family: 'Playfair Display', serif; */
+}
